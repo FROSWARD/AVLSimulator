@@ -1,0 +1,17 @@
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/model/AVLNode.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/model/AVLTree.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/service/AVLService.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/service/TraversalService.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/MainApp.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/animations/DeleteAnimation.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/animations/InsertAnimation.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/animations/NodeMoveAnimation.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/animations/RotationAnimation.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/animations/TraversalAnimation.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/components/NodeRenderer.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/panels/ControlPanel.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/panels/InfoOverlay.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/panels/InfoPanel.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/panels/TopBar.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/ui/panels/TreePanel.java
+/home/frosward/AVLSimulatorV2.4/src/main/java/com/avlsimulator/util/TreeLayoutCalculator.java

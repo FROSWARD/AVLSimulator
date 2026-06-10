@@ -1,0 +1,99 @@
+/* ============================================================
+   AVL Simulator v2.0 — Global stylesheet
+   Paleta: dark navy #080E1C / azul #3B82F6 / púrpura #7C3AED
+   ============================================================ */
+
+/* Fondo raíz */
+.root {
+    -fx-background-color: #080E1C;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* ── ScrollPane ─────────────────────────────────────────── */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-bar {
+    -fx-background-color: #0D1528;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #1E3A5F;
+    -fx-background-radius: 4;
+}
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 2;
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #3B82F6;
+    -fx-shape: " ";
+    -fx-padding: 3;
+}
+
+/* ── Slider ─────────────────────────────────────────────── */
+.slider .track {
+    -fx-background-color: #1E293B;
+    -fx-background-radius: 3;
+}
+.slider .thumb {
+    -fx-background-color: #3B82F6;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(gaussian, #3B82F666, 6, 0.4, 0, 0);
+}
+
+/* ── TextField ──────────────────────────────────────────── */
+.text-field:focused {
+    -fx-border-color: #3B82F6 !important;
+    -fx-border-width: 1 !important;
+    -fx-effect: dropshadow(gaussian, #3B82F640, 8, 0, 0, 0);
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.button:focused {
+    -fx-border-color: #3B82F6;
+    -fx-border-width: 2;
+    -fx-border-radius: 6;
+}
+
+/* ── Tooltip ─────────────────────────────────────────────── */
+.tooltip {
+    -fx-background-color: #0F172A;
+    -fx-text-fill: #CBD5E1;
+    -fx-border-color: #1E3A5F;
+    -fx-border-width: 1;
+    -fx-padding: 8 12;
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+}
+
+/* ── Alert / Dialog ─────────────────────────────────────── */
+.dialog-pane {
+    -fx-background-color: #1E293B;
+    -fx-border-color: #1E3A5F;
+    -fx-border-width: 1;
+}
+.dialog-pane .content.label {
+    -fx-text-fill: #CBD5E1;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: #0F172A;
+}
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #F1F5F9;
+}
+.dialog-pane > .button-bar > .container > .button {
+    -fx-background-color: #3B82F6;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
