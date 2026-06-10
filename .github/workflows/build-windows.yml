@@ -1,0 +1,38 @@
+name: Build Windows EXE
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: Instalar WiX
+        run: choco install wixtoolset -y
+      - name: Compilar
+        run: mvn clean package -DskipTests
+      - name: Generar EXE
+        run: |
+          jpackage `
+            --input target/ `
+            --name AVLSimulator `
+            --main-jar AVLSimulator-2.0.0.jar `
+            --main-class com.avlsimulator.ui.MainApp `
+            --type exe `
+            --icon src/main/resources/logo.ico `
+            --win-shortcut `
+            --win-menu `
+            --app-version 2.4.0 `
+            --dest output/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AVLSimulator-Windows-EXE
+          path: output/*.exe
+          retention-days: 30
